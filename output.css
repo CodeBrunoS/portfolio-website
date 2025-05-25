@@ -222,12 +222,18 @@
   .gap-32 {
     gap: calc(var(--spacing) * 32);
   }
+  .gap-36 {
+    gap: calc(var(--spacing) * 36);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
@@ -259,6 +265,9 @@
   }
   .text-\[1\.3rem\] {
     font-size: 1.3rem;
+  }
+  .text-\[1\.5rem\] {
+    font-size: 1.5rem;
   }
   .text-\[\#000\] {
     color: #000;
