@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@layer base {
+  /* General styles */
+  .body {
+    /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif; */
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+
+  /* Section Introduction styles for p and h3 */
+  .the_heading_p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+    margin: -5px;
+  }
+
+  .the_heading_h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #345da7;
+    margin: -5px;
+  }
+
+  /* Section margin block size */
+  .section {
+    margin-block: 80px;
+  }
+
+  /* Wrapper */
+  .wrapper {
+    max-inline-size: 1200px;
+    margin-inline: auto;
+  }
+
+  /* Icon Size */
+  .icon {
+    width: 50px;
+  }
+}

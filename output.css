@@ -6,6 +6,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --spacing: 0.25rem;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -155,4 +158,58 @@
     display: none !important;
   }
 }
-@layer utilities;
+@layer utilities {
+  .flex {
+    display: flex;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-\[1\.3rem\] {
+    font-size: 1.3rem;
+  }
+  .text-\[\#000\] {
+    color: #000;
+  }
+}
+@layer base {
+  .body {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+  .the_heading_p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+    margin: -5px;
+  }
+  .the_heading_h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #345da7;
+    margin: -5px;
+  }
+  .section {
+    margin-block: 80px;
+  }
+  .wrapper {
+    max-inline-size: 1200px;
+    margin-inline: auto;
+  }
+  .icon {
+    width: 50px;
+  }
+}
